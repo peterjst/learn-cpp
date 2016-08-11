@@ -33,7 +33,7 @@ public:
 
     void move() override
     {
-       cout << color_ << " " << type_ << " car move" << endl;
+       cout << color_ << " " << type_ << " move" << endl;
     }
 
     ~Car()
@@ -56,7 +56,8 @@ public:
     }
     void move() override
     {
-       cout << color_ << " Honda " << make_ << " move" << endl;
+        Car::move();
+        cout << color_ << " Honda " << make_ << " move" << endl;
     }
     ~Honda()
     {
