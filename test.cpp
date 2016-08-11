@@ -1,13 +1,18 @@
 #include <iostream>
+#include <stdexcept>
+#include <vector>
 
 using namespace::std;
 
 int main()
 {
-    int arr[3] = {1, 2, 3};
-    cout << "aa" << endl;
-    for (auto ch : {4, 5, 6}) {
-        cout << ch << endl;
+    vector<int> v;
+
+    try {
+        cout<< v.at(20) << endl;
+    }
+    catch (out_of_range) {
+       cout << "out of range!";
     }
     return 0;
 }
